@@ -24,6 +24,7 @@ urlpatterns = [
         name='token_refresh',
     ),
     path('api/categories/', include('categories.urls')),
+    path('api/brands/', include('brands.urls')),
     path('__debug__/', include('debug_toolbar.urls')),
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path(
